@@ -1,0 +1,26 @@
+{
+    "builders": [{
+      "type": "azure-arm",
+      "client_id":"e4b04493-139c-40cf-881d-9c96e436d8f3",
+      "client_secret": "ZeQ8Q~_pNtFFPE.x_O.OvODf3Qg-Gh3YvAiWlcw7",
+      "tenant_id": "976ace6a-6df4-47c0-9e7f-64dde4491107",
+      "subscription_id": "39b8878b-a80d-411a-8dfa-e1fa084ab2a2",
+      "managed_image_resource_group_name": "PackerImages",
+      "managed_image_name": "location_image",
+      "os_type": "Linux",
+      "image_publisher": "Canonical",
+      "image_offer": "UbuntuServer",
+      "image_sku": "18_04-lts-gen2",
+      "location": "East US",
+      "vm_size": "Standard_B2s"
+    }],
+    "provisioners": [ {
+        "type": "file",
+        "source": "./locations-postgres.jar",
+        "destination": "~/locations-postgres.jar"
+    }, 
+  {
+    "type": "shell",
+    "script": "./setup.sh"
+  }]
+}
