@@ -10,7 +10,7 @@ pipeline {
 
         stage('Packer') {
             steps {
-                sh 'packer init'
+                
                 sh 'packer validate location.json'
                 sh 'packer build location.json'
             }
