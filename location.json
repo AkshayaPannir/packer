@@ -5,7 +5,7 @@
       "client_secret": "ZeQ8Q~_pNtFFPE.x_O.OvODf3Qg-Gh3YvAiWlcw7",
       "tenant_id": "976ace6a-6df4-47c0-9e7f-64dde4491107",
       "subscription_id": "39b8878b-a80d-411a-8dfa-e1fa084ab2a2",
-      "managed_image_resource_group_name": "PackerImages",
+      "managed_image_resource_group_name": "newone",
       "managed_image_name": "location_image",
       "os_type": "Linux",
       "image_publisher": "Canonical",
